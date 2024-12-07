@@ -1,0 +1,240 @@
+* {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/*== desktop ==*/
+.btn-block {
+    width: 100%;
+}
+
+.main-section-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 5rem;
+    position: relative;
+}
+
+.video-bg-container-desktop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; 
+    object-fit: cover; 
+}
+
+.video-bg-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: -2;
+}
+
+.video-bg-container-desktop .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.custom-container-desktop {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.name-desktop {
+    position: absolute;
+}
+
+.about-desktop {
+    max-width: 12rem;
+    position: absolute;
+    top: 10rem;
+}
+
+.logo-video-container-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-video-desktop {
+    max-width: 18rem;
+}
+
+.carousel .carousel-item {
+    width: 25rem;
+    height: 30rem;
+}
+
+.carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+/*== mobile ==*/
+.information-section-mobile {
+    padding-block-start: 7rem;
+}
+
+.about-mobile {
+    text-align: center;
+}
+
+.main-info-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.divider-concave-upward {
+    padding-block-start: 5rem;
+    background: linear-gradient(to bottom, #ffffff 10%, #4a148c 10%);
+    height: 6rem;
+    margin: 0;
+    clip-path: ellipse(60% 70% at 50% 100%);
+}
+
+.divider-concave-downward {
+    padding-block-start: 5rem;
+    background: linear-gradient(to bottom, #4a148c 50%, #ffffff 50%);
+    height: 6rem;
+    margin: 0;
+    clip-path: ellipse(60% 70% at 50% -35%);
+}
+
+.divider-concave-downward-footer {
+    padding-block-start: 5rem;
+    background: linear-gradient(to bottom, #ffffff 50%, #ffffff 50%);
+    height: 6rem;
+    margin: 0;
+    clip-path: ellipse(60% 70% at 50% 10%);
+}
+
+.sample-project-mobile-desc {
+    text-align: left;
+}
+
+.sidebar-section-title-mobile {
+    font-weight: 600;
+}
+
+.tool-card-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tool-logo-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-logo-size-mobile {
+    max-height: 41.2px; 
+    max-width: 100%;
+}
+
+.tool-name-mobile {
+    font-weight: 600;
+}
+
+.logo-footer-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer-mobile {
+    max-width: 3rem;
+    margin-top: 1.2rem;
+}
+
+/*== media query ==*/
+
+/*== large desktops ==*/
+@media (min-width: 1500px) {
+    .custom-container-desktop {
+        max-width: 120rem;
+    }
+
+    .about-desktop {
+        max-width: 20rem;
+        position: absolute;
+        top: 10rem;
+    }
+
+    .logo-video-desktop {
+        max-width: 28rem;
+    }
+}
+
+/*== mobile sizes ==*/
+@media (min-width: 520px) {
+    .intro-video-mobile {
+        max-width: 35rem;
+    }
+
+    .intro-logo-video-mobile {
+        max-width: 25rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 519px) {
+    .intro-video-mobile {
+        max-width: 28rem;
+    }
+
+    .intro-logo-video-mobile {
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .intro-video-mobile {
+        max-width: 27rem;
+    }
+
+    
+    .intro-logo-video-mobile {
+        max-width: 14rem;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 424px) {
+    .intro-video-mobile {
+        max-width: 23rem;
+    }
+
+    .intro-logo-video-mobile {
+        max-width: 10rem;
+    }
+}
+
+@media (max-width: 339px) {
+    .intro-video-mobile {
+        max-width: 20rem;
+    }
+
+    .intro-logo-video-mobile {
+        max-width: 8rem;
+    }
+}
+

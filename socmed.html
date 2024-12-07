@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Font Icons -->
+        <script src="https://kit.fontawesome.com/f3fc65bfde.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        <!-- Materialized CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style_socmed.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sam_ | Socmed</title>
+    </head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="brand-logo left">
+                        <div class="logo-mobile">
+                            <img src="assets/logo/newjeans_logo.jpg" alt="Logo" class="circle" style="max-width: 3.4rem; margin-top: 0.3rem;">
+                            <h5 class="white-text">NewJeans</h5>
+                        </div>
+                    </div>
+                    <ul id="nav-mobile" class="right">
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">chat_bubble</i></a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">notifications</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-template row">
+        <!-- left side content for desktops -->
+        <div class="left-panel">
+            <div class="hide-on-med-and-down">
+                <div class="left-panel-content row right">
+                    <div class="col l12 white-text">
+                        <div class="left-side-item-container">
+                            <img src="assets/logo/default_logo.jpg" alt="" class="user-profile circle responsive-img" style="width: 4rem;">
+                            <p class="flow-text white-text">Tokki</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="side-item-container">
+                            <a href="https://www.youtube.com/c/NewJeans_official" target="_blank" rel="noreferrer noopener" class="waves-effect waves-purple btn-flat white-text">
+                                <i class="fa-brands fa-youtube" style="padding-right: 1rem;"></i> Youtube
+                            </a>
+                        </div>
+                        <div class="side-item-container">
+                            <a href="https://x.com/NewJeans_ADOR" target="_blank" rel="noreferrer noopener" class="waves-effect waves-purple btn-flat white-text">
+                                <i class="fa-brands fa-x-twitter" style="padding-right: 1rem;"></i> Twitter
+                            </a>
+                        </div>
+                        <div class="side-item-container">
+                            <a href="https://www.instagram.com/newjeans_official/" target="_blank" rel="noreferrer noopener" class="waves-effect waves-purple btn-flat white-text">
+                                <i class="fa-brands fa-instagram" style="padding-right: 1rem;"></i> Instagram
+                            </a>
+                        </div>
+                        <div class="side-item-container">
+                            <a href="https://www.facebook.com/official.newjeans" target="_blank" rel="noreferrer noopener" class="waves-effect waves-purple btn-flat white-text">
+                                <i class="fa-brands fa-facebook" style="padding-right: 1rem;"></i> Facebook
+                            </a>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="side-item-container">
+                            <a href="#modal1" class="waves-effect waves-purple btn-flat white-text modal-trigger">
+                                <i class="fa-solid fa-music" style="padding-right: 1rem;"></i> Supernatural
+                            </a>
+                        </div>
+                        <div class="side-item-container">
+                            <a href="#modal2" class="waves-effect waves-purple btn-flat white-text modal-trigger">
+                                <i class="fa-solid fa-music"  style="padding-right: 1rem;"></i> How Sweet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="col s12 m12 l6">
+            <div class="container center">
+                <!-- Stories -->
+                <div class="stories-main-container">
+                    <button id="story_btn_backward" class="story-btn-left btn-floating waves-light waves-effect black"><i class="material-icons">arrow_back</i></button>
+                    <div id="stories_container" class="stories">
+                        <div class="story-container">
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/haerin_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>                        
+                                <p class="story-username white-text">Haerin</p>
+                                <img src="assets/images/haerin_story_1.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/hanni_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">Hanni</p>
+                                <img src="assets/images/hanni_story_1.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/minji_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">Minji</p>
+                                <img src="assets/images/minji_story_1.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/dani_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">Danielle</p>
+                                <img src="assets/images/dani_story_1.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/hyein_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">Hyein</p>
+                                <img src="assets/images/hyein_story_1.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/hanni_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">Hanni</p>
+                                <img src="assets/images/hanni_story_2.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/haerin_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">Haerin</p>
+                                <img src="assets/images/haerin_story_2.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/minji_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">minji</p>
+                                <img src="assets/images/minji_story_2.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/hanni_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">Hanni</p>
+                                <img src="assets/images/hanni_story_3.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                            <div class="story">
+                                <div class="story-overlay"></div>
+                                <div class="story-user-icon">
+                                    <img src="assets/logo/minji_pfp.jpg" alt="icon" class="responsive-img circle">
+                                </div>
+                                <p class="story-username white-text">minji</p>
+                                <img src="assets/images/minji_story_3.jpg" alt="photo" class="responsive-img story-photo">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="story_btn_forward" class="story-btn-right btn-floating waves-light waves-effect black"><i class="material-icons">arrow_forward</i></button>
+                </div>
+                <br>
+                <!-- Posts -->
+                <div class="posts-main-container">
+                    <div class="row">
+                        <div class="col s12 m12" style="padding-inline: 0;">
+                            <div class="card">
+                                <div class="post-image card-image">
+                                    <img src="assets/logo/haerin_pfp.jpg" alt="post">
+                                    <div class="post-overlay"></div>
+                                    <span class="post-user-info card-title">
+                                        <div class="post-user-icon">
+                                            <img src="assets/logo/haerin_pfp.jpg" alt="icon" style="border-radius: 50%;">
+                                        </div>
+                                        Haerin
+                                    </span>
+                                </div>
+                                <div class="card-content">
+                                    <p class="left-align">
+                                        Fresh look, fresh vibes! 🌟 Updated my profile picture. 😊 #NewProfile #HelloWorld
+                                    </p>
+                                </div>
+                                <div class="card-action left-align">
+                                    <a href="#!" class="black-text">Like</a>
+                                    <a href="#!" class="black-text">Comment</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="post-image card-image">
+                                    <img src="assets/images/minji_post_1.jpg" alt="post">
+                                    <div class="post-overlay"></div>
+                                    <span class="post-user-info card-title">
+                                        <div class="post-user-icon">
+                                            <img src="assets/logo/minji_pfp.jpg" alt="icon" style="border-radius: 50%;">
+                                        </div>
+                                        Minji
+                                    </span>
+                                </div>
+                                <div class="card-content">
+                                    <p class="left-align">
+                                        Feeling the magic of the season! 🎄✨ Wishing everyone love, joy, and all things merry this Christmas. ❤️🎅 #MerryChristmas #HolidayVibes
+                                    </p>
+                                </div>
+                                <div class="card-action left-align">
+                                    <a href="#!" class="black-text">Like</a>
+                                    <a href="#!" class="black-text">Comment</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="post-image card-image">
+                                    <div class="video-container">
+                                        <iframe width="853" height="480" src="https://www.youtube.com/embed/jUNz-uTF--E"></iframe>
+                                    </div>
+                                    <div class="post-overlay"></div>
+                                    <span class="post-user-info card-title">
+                                        <div class="post-user-icon">
+                                            <img src="assets/logo/newjeans_logo.jpg" alt="icon" style="border-radius: 50%;">
+                                        </div>
+                                        NewJeans
+                                    </span>
+                                </div>
+                                <div class="card-content">
+                                    <p class="left-align">
+                                        [단독샷캠4K] 뉴진스 'Ditto' 단독샷 별도녹화│NewJeans ONE TAKE STAGE @SBS Inkigayo 230115
+                                        (Ft. 스탠다드 별도녹화)
+                                        #인기가요 #뉴진스 #Ditto
+                                    </p>
+                                </div>
+                                <div class="card-action left-align">
+                                    <a href="#!" class="black-text">Like</a>
+                                    <a href="#!" class="black-text">Comment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right side content for desktops -->
+        <div class="right-panel">
+            <div class="right-panel-content">
+                <div class="right-side-item-container">
+                    <a href="" class="white-text">
+                        <p class="flow-text"><i class="fa-solid fa-video" style="padding-right: 1rem;"></i> NewTube</p>
+                    </a>
+                </div>
+                <div class="right-side-item-container">
+                    <div class="newtube-container row">
+                        <div class="newtube-item col l12">
+                            <div class="divider"></div>
+                            <iframe width="949" height="534" src="https://www.youtube.com/embed/48WTUOhaAwc" style="width: 100%; height: 100%;" title="[Light Jeans] 2024 TMA Behind ✨ | NewJeans" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="949" height="534" src="https://www.youtube.com/embed/nD3MKxxa3ec" style="width: 100%; height: 100%;" title="[Jeans&#39; ZINE] 가을캠프 EP.4 깊어가는 우정의 밤…⭐️️ | NewJeans" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="949" height="534" src="https://www.youtube.com/embed/C76lB22Al9Y" style="width: 100%; height: 100%;" title="[Light Jeans] Billboard Artist Photoshoot Behind 🌫 | NewJeans" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <footer class="page-footer black">
+                            <div class="divider"></div>
+                            <p class="white-text" style="font-size: 0.7rem;">© 2024 ADOR. All Rights Reserved.</p>
+                            <p class="white-text purple-text text-darken-4" style="font-size: 0.7rem;">Made with MaterializeCSS</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content purple darken-4">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5ocSQW5sIUIOFojwXEz9Ki?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="modal-footer purple darken-4">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Close</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content purple darken-4">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/38tXZcL1gZRfbqfOG0VMTH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="modal-footer purple darken-4">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Close</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+
+            // Story Script
+            // Story Scroll Function
+            const $storyContainer = $('#stories_container');
+            const $backwardBtn = $('#story_btn_backward');
+            const $forwardBtn = $('#story_btn_forward');
+
+            // Scroll Backward
+            $backwardBtn.on('click', function(){
+                $storyContainer.animate({
+                    scrollLeft: '-=150px'
+                }, 300)
+            })
+
+            // Scroll Forward
+            $forwardBtn.on('click', function(){
+                $storyContainer.animate({
+                    scrollLeft: '+=150px'
+                }, 300)
+            })
+
+            // Function to hide the buttons when not needed
+            function checkOverflow() {
+                // Check if the Container total width is greater than the visible width
+                // Total width > Visible Width
+                if ($storyContainer[0].scrollWidth > $storyContainer.innerWidth()) {
+                // Width is Greater then Visible Width, show the buttons
+                $backwardBtn.show();
+                $forwardBtn.show();
+                } else {
+                // Width is less than Visible Width, hide the buttons
+                $backwardBtn.hide();
+                $forwardBtn.hide();
+                }
+            }
+
+            // Run the check on page load and on window resize
+            checkOverflow();
+            $(window).on('resize', checkOverflow);
+        })
+
+    </script>
+</body>
+</html>
