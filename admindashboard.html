@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Icons -->
+    <script src="https://kit.fontawesome.com/f3fc65bfde.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- Materialized CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Chart Js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style_admindashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam_</title>
+</head>
+<body class="black white-text">
+    <header>
+        <div class="navbar-fixed">
+            <nav class="black z-depth-0">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile" class="hide-on-small-only">
+                        <a href="#" class="brand-logo"><i class="fa-solid fa-arrow-trend-up"></i>Analytics 360</a>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#!" class="dropdown-trigger" data-target="dropdown1"><i class="material-icons">notifications</i></a></li>
+                        <li><a href="#!" class="dropdown-trigger" data-target="dropdown2"><i class="material-icons">settings</i></a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="left hide-on-large">
+                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="slide-out" class="sidenav sidenav-fixed grey darken-4">
+            <div class="container center">
+                <img src="assets/logo/logo_personal_white.png" class="responsive-img" alt="Logo" style="width: 5rem; padding-top: 1rem;">
+            </div>
+            <div class="divider"></div>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">apps</i>Pages</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">equalizer</i>Analytics</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">face</i>Manage Users</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">event</i>Events</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">email</i>Company Email</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">folder</i>Folder 1</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">folder</i>Folder 2</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">folder</i>Folder 3</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header grey darken-4"><i class="material-icons">file_download</i>Export Data</div>
+                    <div class="collapsible-body black white-text">
+                        <ul>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">web</i>Dashboard</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">list</i>Fixed Chart</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">dashboard</i>Grid</a></li>
+                            <li><a href="#!" class="waves-effect active white-text"><i class="material-icons white-text">message</i>Chat</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h3>Dashboard</h3>
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card green">
+                        <div class="metric-card-content card-content">
+                            <span class="black-text">
+                                <i class="fa-solid fa-arrow-down" style="padding-right: 1rem;"></i>
+                                Inbound
+                            </span>
+                            <p class="black-text flow-text">1,919 pcs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card blue">
+                        <div class="metric-card-content card-content">
+                            <span class="black-text">
+                                <i class="fa-solid fa-box" style="padding-right: 1rem;"></i>
+                                Items
+                            </span>
+                            <p class="black-text flow-text">1,211 pcs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card orange">
+                        <div class="metric-card-content card-content">
+                            <span class="black-text">
+                                <i class="fa-solid fa-arrow-up" style="padding-right: 1rem;"></i>
+                                Outbound
+                            </span>
+                            <p class="black-text flow-text">2212 pcs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card red">
+                        <div class="metric-card-content card-content">
+                            <span class="black-text">
+                                <i class="fa-solid fa-arrow-trend-down" style="padding-right: 1rem;"></i>
+                                Revoked
+                            </span>
+                            <p class="black-text flow-text">50 pcs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l12">
+                    <div class="card grey lighten-4">
+                        <div class="card-content ">
+                            <canvas id="ExampleChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <!-- no footer for now -->
+    </footer>
+
+    <!-- dropdown -->
+    <ul id='dropdown1' class='dropdown-content'>
+        <div class="row">
+            <div class="col s12">
+                <li style="padding-left: 1rem;"><h5 class="black-text"><i class="fa-solid fa-bell" style="padding-right: 1rem;"></i>Notifications</h5></li>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="divider"></div>
+                    <div class="card grey lighten-4">
+                        <div class="card-content" style="padding: 1rem !important;">
+                            <span class="card-title black-text" style="font-weight: 600;">
+                                Item Revoked
+                            </span>
+                            <p class="grey-text">Content</p>
+                        </div>
+                        <div class="card-action" style="display: flex; padding: 0 !important">
+                            <a href="#!" class="black-text" style="margin: 0 !important">View</a>
+                            <a href="#!" class="black-text" style="margin: 0 !important">Dismiss</a>
+                        </div>
+                    </div>
+                    <div class="card grey lighten-4">
+                        <div class="card-content" style="padding: 1rem !important;">
+                            <span class="card-title black-text" style="font-weight: 600;">
+                                Item Revoked
+                            </span>
+                            <p class="grey-text">Content</p>
+                        </div>
+                        <div class="card-action" style="display: flex; padding: 0 !important">
+                            <a href="#!" class="black-text" style="margin: 0 !important">View</a>
+                            <a href="#!" class="black-text" style="margin: 0 !important">Dismiss</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+
+    <ul id='dropdown2' class='dropdown-content'>
+        <li style="padding-left: 1rem;"><h5 class="black-text"><i class="fa-solid fa-gear" style="padding-right: 1rem;"></i>Settings</h5></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!" class="black-text"><i class="fa-solid fa-arrow-trend-up" style="padding-right: 1rem;"></i>Analytics Settings</a></li>
+        <li><a href="#!" class="black-text"><i class="fa-solid fa-box" style="padding-right: 1rem;"></i>Items Settings</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="index.html" class="black-text"><i class="fa-solid fa-power-off" style="padding-right: 1rem;"></i>Log Out</a></li>
+    </ul>
+
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.dropdown-trigger').dropdown();
+        $('.collapsible').collapsible();
+    })
+
+    // Chart 
+    // id Selector
+    const ctx = document.getElementById('ExampleChart').getContext('2d');
+    
+    // Sample Static Data
+    const data = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+            label: 'Monthly Sales',
+            data: [10, 20, 15, 30, 25, 40],
+            borderColor: '#000000',
+            backgroundColor: '#000000',
+            tension: 0.4, // For smooth curves
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false,
+                    //position: 'top',
+                },
+                tooltip: {
+                    enabled: true, // show tooltip
+                    backgroundColor: 'rgba(255, 255, 255, 1)', // white
+                    titleColor: 'black',
+                    bodyColor: 'black',
+                    borderColor: 'rgba(0, 0, 0, 0.1)',
+                    borderWidth: 2,
+                    cornerRadius: 0,
+                    titleFont: {
+                        family: 'Arial',
+                        size: 16,
+                        style: 'bold',
+                    },
+                    bodyFont: {
+                            family: 'Verdana', // Font family for the body
+                            size: 14, // Font size for the body
+                    },
+                    displayColors: false,
+                }
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Month',
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Sales',
+                    },
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+
+    // Render the chart
+    new Chart(ctx, config);
+</script>
+
