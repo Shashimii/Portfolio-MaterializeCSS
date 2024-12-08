@@ -300,7 +300,10 @@
     $(document).ready(function(){
         $('.tabs').tabs();
         $(".dropdown-trigger").dropdown();
-        $('.materialboxed').materialbox();
+        $('.materialboxed').materialbox({
+            inDuration: 350,
+            outDuration: 350
+        });
         $('.fixed-action-btn').floatingActionButton();
     })
 </script>
