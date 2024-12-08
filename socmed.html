@@ -183,7 +183,7 @@
                         <div class="col s12 m12" style="padding-inline: 0;">
                             <div class="card">
                                 <div class="post-image card-image">
-                                    <img src="assets/logo/haerin_pfp.jpg" alt="post">
+                                    <img src="assets/logo/haerin_pfp.jpg" class="materialboxed" data-caption="Fresh look, fresh vibes! 🌟 Updated my profile picture. 😊 #NewProfile #HelloWorld" alt="post">
                                     <div class="post-overlay"></div>
                                     <span class="post-user-info card-title">
                                         <div class="post-user-icon">
@@ -204,7 +204,7 @@
                             </div>
                             <div class="card">
                                 <div class="post-image card-image">
-                                    <img src="assets/images/minji_post_1.jpg" alt="post">
+                                    <img src="assets/images/minji_post_1.jpg" class="materialboxed" data-caption="  Feeling the magic of the season! 🎄✨ Wishing everyone love, joy, and all things merry this Christmas. ❤️🎅 #MerryChristmas #HolidayVibes" alt="post">
                                     <div class="post-overlay"></div>
                                     <span class="post-user-info card-title">
                                         <div class="post-user-icon">
@@ -304,6 +304,10 @@
     <script>
         $(document).ready(function(){
             $('.modal').modal();
+            $('.materialboxed').materialbox({
+                inDuration: 350,
+                outDuration: 350
+            });
 
             // Story Script
             // Story Scroll Function
