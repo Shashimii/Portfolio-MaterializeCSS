@@ -1,0 +1,15 @@
+* {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content {
+    top: 100% !important;
+    width: 100% !important;
+    max-width: 20% !important;
+}
