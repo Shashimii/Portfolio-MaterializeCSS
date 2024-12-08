@@ -437,10 +437,16 @@
     $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.carousel').carousel({
+            duration: 400,
             dist: -100,
             padding: 20, 
             indicators: true    
         });
+
+        // Carousel Cycling
+        setInterval(() => {
+            $('.carousel').carousel('next');
+        }, 4000)
     })
 </script>
 </html>
