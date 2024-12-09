@@ -288,9 +288,48 @@
             <i class="large material-icons">add</i>
         </a>
         <ul>
-            <li><a class="btn-floating purple darken-4"><i class="material-icons">camera</i></a></li>
-            <li><a class="btn-floating yellow darken-4"><i class="material-icons">mode_edit</i></a></li>
+            <li><a class="btn-floating modal-trigger purple darken-4"><i class="material-icons">camera</i></a></li>
+            <li><a class="btn-floating btn modal-trigger yellow darken-4" href="#addModal"><i class="material-icons">mode_edit</i></a></li>
         </ul>
+    </div>
+
+    <!-- modal -->
+    <div id="addModal" class="modal" style="height: 100rem; width: 100%; max-width: 80%;">
+        <div class="modal-content">
+            <h4>📝 Add New Task</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="input-field col s12">
+                        <input placeholder="cleaning" id="task_name" type="text" class="validate">
+                        <label for="task_name">Task Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input placeholder="mm/dd/yyyy" id="task_schedule" type="text" class="datepicker">
+                        <label for="task_schedule">Set Schedule</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Select Importance</option>
+                            <option value="1">High</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Low</option>
+                        </select>
+                        <label>Task Importance</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <label>Task Progress</label>
+                        <br>
+                        <p class="range-field">
+                            <input type="range" id="test5" min="0" max="100" />
+                        </p>                
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="modal-close waves-effect waves-green btn-flat">✅ Save Task</button>
+            <button class="modal-close waves-effect waves-green btn-flat">❌ Cancel Task</button>
+        </div>
     </div>
     
 </body>
@@ -299,6 +338,9 @@
 <script>
     $(document).ready(function(){
         $('.tabs').tabs();
+        $('.modal').modal();
+        $('select').formSelect();
+        $('.datepicker').datepicker();
         $(".dropdown-trigger").dropdown();
         $('.materialboxed').materialbox({
             inDuration: 350,
